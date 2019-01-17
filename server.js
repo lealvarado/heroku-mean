@@ -49,8 +49,6 @@ function handleError(res, reason, message, code) {
    });
  });
 
-v
-
 /*  "/api/attendance/:id"
  *    GET: find student by id
  *    PUT: update student by id
