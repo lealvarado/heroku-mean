@@ -49,6 +49,23 @@ function handleError(res, reason, message, code) {
    });
  });
 
+ app.post("/api/attendance", function(req, res) {
+   var newStudent = req.body;
+   newStudent.createDate = new Date();
+
+   if (!req.body.name) {
+     handleError(res, "Invalid user input", "Must provide a name.", 400);
+   } else {
+     db.collection(CLASS_COLLECTION).insertOne(newStudent, function(err, doc) {
+       if (err) {
+         handleError(res, err.message, "Failed to create new contact.");
+       } else {
+         res.status(201).json(doc.ops[0]);
+       }
+     });
+   }
+ });
+
 /*  "/api/attendance/:id"
  *    GET: find student by id
  *    PUT: update student by id
