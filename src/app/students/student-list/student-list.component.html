@@ -12,11 +12,11 @@
     <button class="btn btn-warning" (click)="createNewStudent()">New</button>
   </div>
   <div class="col-md-5 col-md-offset-2">
-    <student-details
+    <student-detail
       [student]="selectedStudent"
       [createHandler]="addStudent"
       [updateHandler]="updateStudent"
       [deleteHandler]="deleteStudent">
-    </student-details>
+    </student-detail>
   </div>
 </div>
