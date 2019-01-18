@@ -16,6 +16,8 @@ import { StudentListComponent } from './students/student-list/student-list.compo
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
