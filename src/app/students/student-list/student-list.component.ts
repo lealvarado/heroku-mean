@@ -6,7 +6,7 @@ import { StudentDetailComponent } from '../student-detail/student-detail.compone
 @Component({
   selector: 'student-list',
   templateUrl: './student-list.component.html',
-  styleUrls: ['./student-list.component.css'],
+  styleUrls: ['./student-list.component.scss'],
   providers: [StudentService]
 })
 
