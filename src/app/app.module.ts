@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { StudentDetailComponent } from './students/student-detail/student-detail.component';
 import { StudentListComponent } from './students/student-list/student-list.component';
@@ -16,7 +16,6 @@ import { StudentListComponent } from './students/student-list/student-list.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
